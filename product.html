@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="ctl00_Head1">
+    <meta charset="UTF-8">
+    <title>重阳投资</title>
+    <link href="css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="css/css.css" rel="stylesheet" type="text/css"/>
+    <script>
+        var isAccept = localStorage.getItem('accept');
+        if (!isAccept) {
+            location.href = 'notice.html';
+        }
+    </script>
+</head>
+<body>
+<div class="wapper header">
+    <a href="Default.aspx" class="fl">
+        <img src="images/default/logo.jpg">
+    </a>
+    <table height="10px" border="0" cellspacing="0" cellpadding="0" style="margin-left: 10px;margin-right: 0;">
+        <tr>
+            <td width="1130" height="5"></td>
+            <td width="50" style="padding-top: 0; text-align: right;" valign="top">
+                <a href="Default.aspx">
+                    <font style="font-family: Arial; font-size: 12px; text-align: right;" color="#001c43">
+                        <b>中文</b>
+                    </font>
+                </a>
+            </td>
+            <td width="20px" valign="top" style="padding-top: 0px; color: #001c43; text-align: center;"></td>
+            <td width="50" style="padding-top: 0px; text-align: left;" valign="top">
+                <a href="http://www.chongyang.net/English">
+                    <font style="font-family: Arial; font-size: 12px;text-align: left;" color="#001c43">
+                        <b>English</b>
+                    </font>
+                </a>
+            </td>
+        </tr>
+    </table>
+    <ul class="menu">
+        <li><a href="Default.aspx">首页</a></li>
+        <li>
+            <a href="about.aspx">走近重阳</a>
+            <p class="submenu">
+                <a href="about.aspx">关于重阳</a>
+                <a href="about.aspx?k=2">投资理念</a>
+                <a href="about.aspx?k=5">合规风控</a>
+                <a href="about.aspx?k=4">投研核心</a>
+                <a href="about.aspx?k=3">基金经理</a>
+                <a href="about.aspx?k=6">联系我们</a>
+                <i class="sj"></i><i class="rightborder"></i>
+            </p>
+        </li>
+        <li id="m_profile"><a href="ChongYangDynamic.aspx">重阳动态</a></li>
+        <li id="m_info">
+            <a href="CYRecommend.aspx">思享重阳</a>
+            <p class="submenu">
+                <a href="CYRecommend.aspx">重阳问答</a>
+                <a href="CYRecommend.aspx?k=2">重阳视点</a>
+                <a href="CYRecommend.aspx?k=3">重阳荐文</a>
+                <i class="sj"></i>
+                <i class="rightborder"></i>
+            </p>
+        </li>
+        <li id="m_pro">
+            <a href="products.aspx">产品与服务</a>
+            <p class="submenu">
+                <a href="products.aspx?k=3">认购流程</a>
+                <a href="products.aspx?k=2">产品咨询</a>
+                <i class="sj"></i>
+                <i class="rightborder"></i>
+            </p>
+        </li>
+        <li class="last"><a href="http://club.chongyang.net">客户登录</a></li>
+    </ul>
+</div>
+
+<div class="wapper clearfix">
+    <img src="images/default/banner_about.jpg" height="240" width="932">
+</div>
+
+<div class="wapper clearfix overhide">
+    <div class="subleft">
+        <a href="javascript:void(0);" onclick="ClickLeftMenu('1');" id="menu01">认购流程</a>
+        <a href="javascript:void(0);" onclick="ClickLeftMenu('2');" id="menu02">产品列表</a>
+    </div>
+    <div id="page01" class="rightcontent" style="display: none;">
+        <div>
+            <b>认购流程</b><br>
+            <b>1.委托人签署信托合同：</b>委托人在产品规定的有效时间范围内，跟信托公司、投资顾问或代销机构联系，获取信托合同进行签署，并提交相关证件；<br>
+            <b>2.委托人汇款：</b>委托人在产品规定的有效时间范围内，将认购资金及认购费用，通过银行汇款到该信托产品指定的托管银行帐户；<br>
+            <b>3.委托人取得合同：</b>在认购产品成立后，或日常开放日认购后，在合同规定的N个（一般为10个）工作日内，委托人将取得由信托公司签署并盖章的有效合同。<br>
+            <br>
+            <b>备注：</b><br>
+            <b>若委托人为自然人，需提供以下资料：</b><br>
+            （1）委托人的身份证明文件（身份证或护照）复印件一式两份；<br>
+            （2）委托人的信托利益分配账户（户名需与身份证为同一人）复印件一式两份（该账户应与合同上填写的信托利益分配账户为同一账户）；<br>
+            （3）委托人的信托资金划入认购账户的银行汇款凭证复印件一式一份，并在汇款备注中注明：“XX认购重阳XX期”；<br>
+            （4）以上复印件上均需客户本人签字，并注明：“仅供认购重阳XX期信托计划”。<br>
+            <br>
+            <b>若认购人为法人，则需要提供以下资料：</b><br>
+            （1） 委托人的法人营业执照副本复印一式两份；<br>
+            （2） 法定代表人有效身份证件复印件一式两份；<br>
+            （3） 法定代表人证明书一式两份；<br>
+            （4） 委托人信托利益分配账户（银行开户证明，户名应为法人全称）复印一式两份；<br>
+            （5） 委托人的信托资金划入认购账户的银行划款凭证复印一式一份，在汇款备注中注明：“XX认购重阳XX期”；<br>
+            （6） 若授权他人（经办人）签字的情况，还需要提供经法定代表人签字并加盖公章的<br>
+            法定代表人授权委托书一式两份，以及经办人有效身份证件复印件一式两份；<br>
+            （7） 以上所有复印件上均需加盖公章，并注明：“仅供认购重阳XX期信托计划”。
+            <br>
+            <br>
+        </div>
+        <img src="images/nav03s01pic.gif" width="607" height="595"><br>
+        <br>
+    </div>
+    <div id="page02" class="rightcontent wordbox" style="display: none;">
+        <div id="Tab1" style="width: 100%">
+            <div class="Menubox">
+                <ul>
+                    <li id="one1" onmouseover="setTab('one',1,2)">产品详情</li>
+                    <li id="one2" onmouseover="setTab('one',2,2)">产品净值</li>
+                </ul>
+            </div>
+        </div>
+        <div id="con_one_1" style="display: none;float: left">
+            <p>重阳投资认为合规风控体系和投研体系密不可分，合规风控贯穿于投研的事前、事中和事后，而重心在事前。</p>
+            <br/>
+        </div>
+        <div id="con_one_2" style="display: none;float: left">
+            <img src="images/pic12.png" vspace="20"/>
+        </div>
+    </div>
+</div>
+<div class="line"></div>
+<div class="footer wapper" style="line-height:22px;">
+    版权所有：上海重阳投资管理股份有限公司&nbsp;&nbsp;&nbsp;&nbsp;
+    <a target="_blank" style="color:blue;" href="">沪ICP备06038136</a><br/>
+    与本网站所载资料有关的所有版权、专利等知识产权及其他任何权利均为重阳投资所有，未经许可不得使用，不得转载、摘编。
+</div>
+<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="js/seanObject.js" type="text/javascript"></script>
+<script src="js/common.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var k = +$G("k");
+        if (k === 1) {
+            ClickLeftMenu('1');
+        } else if (+k === 2) {
+            ClickLeftMenu('2');
+        } else {
+            ClickLeftMenu('1');
+        }
+    });
+
+    function setTab(name, cursel, n) {
+        if (cursel === 1) {
+            $("#tabMove").attr("href", "ChongYangDynamic.aspx");
+        } else if (cursel === 2) {
+            $("#tabMove").attr("href", "CYRecommend.aspx");
+        } else if (cursel === 4) {
+            $("#tabMove").attr("href", "CYRecommend.aspx?k=4");
+        } else {
+            $("#tabMove").attr("href", "CYRecommend.aspx?k=2");
+        }
+        for (i = 1; i <= n; i++) {
+            var menu = document.getElementById(name + i);
+            var con = document.getElementById("con_" + name + "_" + i);
+            menu.className = i === cursel ? "hover" : "";
+            con.style.display = i === cursel ? "block" : "none";
+        }
+    }
+
+    setTab('one', 1, 2)
+</script>
+</body>
+</html>
