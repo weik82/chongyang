@@ -18,18 +18,20 @@ body{font:12px/20px Verdana, 'simsun', Geneva, sans-serif; color:#5f5f5f; backgr
 .clearfix:after{clear:both; display:table; height:0; line-height:0; content:"";}
 
 .header{padding-top:20px; height:110px; border-top:5px #001c43 solid; }
-.menu{float:right; padding-top:20px;}/*padding-top:30px;*/
-.menu li{display:inline-block; *zoom:1; *display:inline; background:url(../images/default/bg.png) right top no-repeat; padding:22px 32px 12px 32px; height:28px; position:relative; z-index:30;}
+.menu{float:right; padding-top:10px;}/*padding-top:30px;*/
+.menu li{display:inline-block; *zoom:1; *display:inline; background:url(../images/default/bg.png) right top no-repeat; padding:22px 22px 12px 16px; height:28px; position:relative; z-index:30;}
 .menu a{ font:bold 14px/2 'Adobe 黑体 Std'; color:#001c43;}
 .menu a:hover{color:orange;}
-.menu .last{background:none; padding-right:0;}ul
-                                              .submenu{ position:absolute; display:none; width:500px; height:35px; padding:11px 0px 6px 20px; background:url(../images/default/submenu.png) left repeat;_background:url(../images/default/submenu_6.png) left no-repeat;  z-index:31; left:0px; top:50px;}
-#m_pro .submenu{left:-218px;width:345px; *width:417px; }
-#m_pro .sj{left:278px;}
-#m_info .submenu{width:260px; *width:320px; }
-#m_profile .submenu{width:210px; }
+.menu .last{background:none;}
+ul .submenu{ position:absolute; display:none; width:440px; height:35px; padding:11px 0 6px 20px; background:url(../images/default/submenu.png) left repeat;_background:url(../images/default/submenu_6.png) left no-repeat;  z-index:31; left:0px; top:50px;}
+#m_pro .submenu{left:-70px;width:190px;}
+#m_pro .sj{left:110px;}
+#m_info .submenu{width:190px;  }
+#m_profile .submenu{width:350px; }
+#m_user .submenu,#m_user1 .submenu{width:190px;left: -50px}
+#m_user .sj,#m_user1 .sj{left: 80px}
 .submenu i{position:absolute;}
-.submenu .sj{width:0; height:0; border-width:0 10px 10px 10px; border-style:solid; border-color: #ffffff #ffffff #001c43 #ffffff; left:50px; top:1px; _font-size:0; _line-height:0;}
+.submenu .sj{width:0; height:0; border-width:0 10px 10px 10px; border-style:solid; border-color: #ffffff #ffffff #001c43 #ffffff; left:35px; top:1px; _font-size:0; _line-height:0;}
 .submenu a{ color:#98a3b5; font:12px/35px simsun; padding:0 16px;}
 .submenu .rightborder{width:1px; height:52px; top:0; right:-1px; background:url(../images/default/submenu_r.png) left no-repeat;_background:url(../images/default/submenu_r_6.png) left no-repeat;}
 
@@ -179,7 +181,7 @@ body{font:12px/20px Verdana, 'simsun', Geneva, sans-serif; color:#5f5f5f; backgr
 #Tab1 .Contentbox ul li a{ color:#5f5f5f;}
 
 .sidebar{ float:left; width:290px; margin-left:20px;}
-.sidebar h1{ color:#9e0621; font-size:14px; font-weight:bold; display:block; position:relative; margin-top:15px;}
+.sidebar h1{ color:#9e0621; font-size:14px; font-weight:bold; display:block; position:relative; margin-top:10px;}
 .sidebar h1 a{ position:absolute;right:0px; bottom:3px;}
 .sidebar ul{ float:left; width:290px; font-size:12px; margin-top:15px;}
 .sidebar li{ float:left; border-bottom:dashed 1px #5f5f5f; width:290px; line-height:35px;}
