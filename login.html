@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+<form name="ctl01" method="post" action="Default.aspx" id="ctl01" onsubmit="return checkIdcard()">
+    <div class="wapper login_box">
+        <ul id="log">
+            <li>
+                <input type="radio" name="rblistType" value="3" checked="checked">
+                <label>客<span style="padding: 0 0 0 7px;">户</span></label>&nbsp;&nbsp;
+                <input type="radio" value="1" name="rblistType">
+                <label>客户经理</label>
+            </li>
+            <li>
+                <label>证件类型：</label>
+                <select name="ddlIdentify" id="ddlIdentify" class="ipt">
+                    <option selected="selected" value="1">身份证</option>
+                    <option value="2">中国护照</option>
+                    <option value="3">军官证</option>
+                    <option value="4">士兵证</option>
+                    <option value="5">回乡证</option>
+                    <option value="6">户口本</option>
+                    <option value="7">外国护照</option>
+                    <option value="8">技术监督局代码</option>
+                    <option value="9">营业执照</option>
+                    <option value="10">行政机关</option>
+                    <option value="11">社会团体</option>
+                    <option value="12">军队</option>
+                    <option value="13">武警</option>
+                    <option value="14">下属机构</option>
+                    <option value="15">基金会</option>
+                    <option value="16">其他</option>
+
+                </select>
+            </li>
+            <li>
+                <label>证件号码：</label>
+                <input name="txtIdentityNo" type="text" id="txtIdentityNo" class="ipt" />
+            </li>
+            <li>
+                <label>登录密码：</label>
+                <input name="txtPwd" type="password" id="txtPwd" class="ipt" />
+            </li>
+            <li>
+                <label>验证码：</label>
+                <input name="txtVeri" type="text" id="txtVeri" class="ipt2" style="width:85px;" />
+                <img id="imgVCode" src="" alt="点击换一张" onclick="this.src=this.src+'?'" style="vertical-align: middle;" />
+            </li>
+            <li class="pl4">
+                <input type="submit" id="btn_submit" class = "btn" value = "登 录" />
+                <input type="button" value="注册" class="btn"  onclick="window.open('ImportantTips.aspx');"/>
+                <input type="button" value="忘记密码" class="btn_2"  onclick="window.open('FirstLogin.aspx?p=forget');"/>
+            </li>
+        </ul>
+    </div>
+    <div class="line"></div>
+    <p class="tc">
+        "财富重阳俱乐部"是重阳投资为旗下产品的持有人和合作伙伴特设的专属服务系统。<br>
+        登录该系统，持有人可以找到专属的产品经理，并订阅各种重阳资讯，这里有重阳投资最新的净值，<br>
+        最近的点评，最及时的问答，以及最全面的分析报告，可供查阅和下载。</p>
+    <div class="line">
+    </div>
+    <div class="footer wapper">
+        版权所有：上海重阳投资管理股份有限公司&nbsp;&nbsp;&nbsp;&nbsp;沪ICP备06038136<br />
+        与本网站所载资料有关的所有版权、专利等知识产权及其他任何权利均为重阳投资所有，未经许可不得使用，不得转载、摘编。
+    </div>
+</form>
+<script src="./js/jquery-1.7.1.min.js"></script>
+<script>
+    $(function(){
+        $('#imgVCode').attr('src',"http://club.chongyang.net:99/VerifyCode.ashx?random=" + Math.random());
+    });
+
+    function checkIdcard() {
+        var testString = "|-&-;-$-%-@-'-<>-()-cr-CR-lf-,-.-script-document-eval";
+        var testArray = testString.split('-');
+
+        //for (var i = 0; i < testArray.length; i++) {
+        //    if (password.indexOf(testArray[i]) != -1) {
+        //        alert("您输入的密码包含非法字符！");
+        //        return false;
+        //    }
+        //    if (num.indexOf(testArray[i]) != -1) {
+        //        alert("您输入的密码包含非法字符！");
+        //        return false;
+        //    }
+        //    if (type.indexOf(testArray[i]) != -1) {
+        //        alert("您输入的密码包含非法字符！");
+        //        return false;
+        //    }
+        //    if (currentIndex.indexOf(testArray[i]) != -1) {
+        //        alert("您输入的密码包含非法字符！");
+        //        return false;
+        //    }
+        //    if (checkValue != "") {
+        //        if (checkValue.indexOf(testArray[i]) != -1) {
+        //            alert("您输入的密码包含非法字符！");
+        //            return false;
+        //        }
+        //    }
+        //    if (logtype.indexOf(testArray[i]) != -1) {
+        //        alert("您输入的密码包含非法字符！");
+        //        return false;
+        //    }
+        //    if (typename.indexOf(testArray[i]) != -1) {
+        //        alert("您输入的密码包含非法字符！");
+        //        return false;
+        //    }
+        //    if (private_authcode.indexOf(testArray[i]) != -1) {
+        //        alert("您输入的密码包含非法字符！");
+        //        return false;
+        //    }
+        //}
+        // return true;
+    }
+</script>
+</body>
+</html>

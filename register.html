@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/applylogin.css">
+    <script language="javascript" type="text/javascript" src="./js/DatePicker/WdatePicker.js"></script>
+</head>
+<body>
+<form name="form1" method="post" id="form1">
+    <div id="wrap">
+        <div id="header">
+        </div>
+        <div id="content">
+            <img src="./images/applylogin/zhuce.jpg"/>
+            <div id="basics" class="mid">
+                <table class="outtable">
+                    <tr>
+                        <td class="td1">客户类型</td>
+                        <td style="vertical-align: middle;">
+                            <table id="rblistType" border="0">
+                                <tr>
+                                    <td>
+                                        <input id="rblistType_0" type="radio" name="rblistType" value="1" checked="checked"/>
+                                        <label for="rblistType_0">个人</label>
+                                    </td>
+                                    <td>
+                                        <input id="rblistType_1" type="radio" name="rblistType" value="2"/>
+                                        <label for="rblistType_1">机构</label>
+                                    </td>
+                                    <td>
+                                        <input id="rblistType_2" type="radio" name="rblistType" value="3"/>
+                                        <label for="rblistType_2">客户经理</label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="td1">合同编号</td>
+                        <td class="td2"><input name="txtContractNo" type="text" id="txtContractNo" class="text"/></td>
+                    </tr>
+                    <tr>
+                        <td class="td1">客户名称*</td>
+                        <td class="td2"><input name="txtCustName" type="text" id="txtCustName" class="text"/></td>
+                        <td class="td1">客户性别</td>
+                        <td class="td2">
+                            <table id="rblSex" border="0">
+                                <tr>
+                                    <td>
+                                        <input id="rblSex_0" type="radio" name="rblSex" value="0" checked="checked"/>
+                                        <label for="rblSex_0">男</label>
+                                    </td>
+                                    <td>
+                                        <input id="rblSex_1" type="radio" name="rblSex" value="1"/>
+                                        <label for="rblSex_1">女</label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1">证件类型*</td>
+                        <td class="td2">
+                            <select name="ddlIdentifyType" id="ddlIdentifyType">
+                                <option selected="selected" value="1">身份证</option>
+                                <option value="2">中国护照</option>
+                                <option value="3">军官证</option>
+                                <option value="4">士兵证</option>
+                                <option value="5">回乡证</option>
+                                <option value="6">户口本</option>
+                                <option value="7">外国护照</option>
+                                <option value="8">技术监督局代码</option>
+                                <option value="9">营业执照</option>
+                                <option value="10">行政机关</option>
+                                <option value="11">社会团体</option>
+                                <option value="12">军队</option>
+                                <option value="13">武警</option>
+                                <option value="14">下属机构</option>
+                                <option value="15">基金会</option>
+                                <option value="16">其他</option>
+                            </select>
+                        </td>
+                        <td class="td1">证件号码*</td>
+                        <td><input name="txtIdentifyNo" type="text" id="txtIdentifyNo" class="text"/></td>
+                    </tr>
+                    <tr>
+                        <td class="td1">手机号码*</td>
+                        <td class="td2"><input name="txtMobileNo" type="text" id="txtMobileNo" class="text"/></td>
+                        <td class="td1">联系电话</td>
+                        <td class="td2"><input name="txtPhone" type="text" id="txtPhone" class="text"/></td>
+                    </tr>
+                    <tr>
+                        <td class="td1">电子邮件*</td>
+                        <td class="td2"><input name="txtEmail" type="text" id="txtEmail" class="text"/></td>
+                        <td class="td1">出生日期</td>
+                        <td class="td2"><input name="txtBrithday" type="text" id="txtBrithday" class="text" onClick="WdatePicker()"/></td>
+                    </tr>
+                    <tr>
+                        <td class="td1">联系地址</td>
+                        <td colspan="3"><input name="txtAddress" type="text" id="txtAddress" style="width:424px;"/></td>
+                    </tr>
+                    <tr>
+                        <td class="td1">购买状态*</td>
+                        <td colspan="3">
+                            <input id="radType" type="radio" name="type" value="radType"/><label for="radType">未购买</label>
+                            <input id="radType1" type="radio" name="type" value="radType1"/><label for="radType1">已购买</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1">其他备注</td>
+                        <td colspan="3">
+                            <textarea name="txtOtherInfo" rows="2" cols="20" id="txtOtherInfo" style="height:56px;width:424px;"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1">验&nbsp;&nbsp;证&nbsp;&nbsp;码</td>
+                        <td colspan="3">
+                            <input name="txtVeri" type="text" id="txtVeri" style="width: 80px;"/>
+                            &nbsp;&nbsp;
+                            <img id="imgVCode" src="http://club.chongyang.net:99/VerifyCode.ashx" alt="图片看不清？点击重新得到验证码" onclick="this.src=this.src+'?'" style="vertical-align: inherit;"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" height="50px" align="center">
+                            <input type="image" name="ibtnsubmit" id="ibtnsubmit" src="./images/applylogin/queren.jpg" style="border-width:0;"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <img src="./images/applylogin/content04.jpg"/>
+        </div>
+        <div id="foot">
+        </div>
+    </div>
+</form>
+</body>
+</html>
