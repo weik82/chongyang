@@ -104,7 +104,7 @@
     <div id="page01" class="rightcontent wordbox" style="display: none;">
         <div id="ctl00_cpContent_UpdatePanel1">
             <table id="ctl00_cpContent_DataList1" cellspacing="0" border="0" style="border-collapse:collapse;">
-                <tbody>
+                <tbody id="news1">
                 <tr>
                     <td width="505"><a href="Recommenddetails.aspx?id=8620">如何看待近期央行货币政策态度及降准可能</a></td>
                     <td width="120" align="right" style="font-family: Tahoma;">2017.09.18</td>
@@ -594,6 +594,21 @@
         } else {
             ClickLeftMenu('1');
         }
+        $.get('./data/data.json', function (res) {
+            var html='';
+            for (var i = 0; i < res.length; i++) {
+                html+='<tr>\n' +
+                    '                    <td width="505"><a href="newsdetail.html?k=1&&id='+res[i].id+'">'+res[i].title+'</a></td>\n' +
+                    '                    <td width="120" align="right" style="font-family: Tahoma;">'+res[i].date+'</td>\n' +
+                    '                </tr>\n' +
+                    '                <tr>\n' +
+                    '                    <td colspan="2">\n' +
+                    '                        <hr style="height:1px;border:none;border-top:1px dashed black;">\n' +
+                    '                    </td>\n' +
+                    '                </tr>'
+            }
+            $('#news1').html(html)
+        })
     });
 </script>
 </body>

@@ -119,82 +119,32 @@
     <div id="Tab1">
         <div class="Menubox">
             <ul>
-                <li id="one3" onmouseover="setTab('one',3,4)">中喆视点</li>
-                <li id="one1" onmouseover="setTab('one',1,4)" class="hover">中喆问答</li>
-                <li id="one2" onmouseover="setTab('one',2,4)">中喆动态</li>
+                <li id="one1" onmouseover="setTab('one',1,3)">中喆视点</li>
+                <li id="one2" onmouseover="setTab('one',2,3)">中喆问答</li>
+                <li id="one3" onmouseover="setTab('one',3,3)">中喆动态</li>
             </ul>
-            <a href="CYRecommend.aspx?k=2" id="tabMove">
+            <a href="news.html?k=2" id="tabMove">
                 <img src="images/default/more.png" width="64" height="19" alt="more"/>
             </a>
         </div>
         <div class="Contentbox">
             <div id="con_one_1" style="display:none;">
                 <dl>
-                    <dt>重阳系列产品2017年9月开放日温馨提示&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017-9-8</dt>
+                    <dt>金正恩的“狼来了”，投资者不再买账&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</dt>
                     <dd>
-                        尊贵的客户：您好！为方便您及时办理产品的申购、赎回手续，经向相关渠道确认，现将重阳系列产品2017年9月的预约申购和赎回时间公布如下...
-                        ［<a id="ctl00_cpContent_hlDetail3" href="Dynamicdetails.aspx?id=8618">详细</a>］
+                        特朗普本周二在“联合国首秀”时，强硬指责朝鲜是邪恶政权，“不计后果地追求核武器和弹道导弹，威胁了整个世界”...
+                        ［<a id="ctl00_cpContent_hlDetail3" href="newsdetail.html?k=1&&id=1">详细</a>］
                     </dd>
                 </dl>
-                <ul>
-                    <li>
-                        <a target="_blank" href="Dynamicdetails.aspx?id=8618" title="重阳系列产品2017年9月开放日温馨提示">
-                            重阳系列产品2017年9月开放日温馨提示
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="Dynamicdetails.aspx?id=8613" title="重阳系列产品2017年8月开放日温馨提示">
-                            重阳系列产品2017年8月开放日温馨提示
-                        </a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a target="_blank" href="Dynamicdetails.aspx?id=8605" title="重阳系列产品2017年7月开放日温馨提示">
-                            重阳系列产品2017年7月开放日温馨提示
-                        </a>
-                    </li>
-
-                    <li>
-                        <a target="_blank" href="Dynamicdetails.aspx?id=8593" title="重阳系列产品2017年6月开放日温馨提示">
-                            重阳系列产品2017年6月开放日温馨提示
-                        </a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a target="_blank" href="Dynamicdetails.aspx?id=8583" title="重阳系列产品2017年5月开放日温馨提示">
-                            重阳系列产品2017年5月开放日温馨提示
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="Dynamicdetails.aspx?id=8576" title="重阳投资连续第八年摘得私募金牛管理公司大奖">
-                            重阳投资连续第八年摘得私募金牛管理公司...
-                        </a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a target="_blank" href="Dynamicdetails.aspx?id=8569" title="重阳系列产品2017年4月开放日温馨提示">
-                            重阳系列产品2017年4月开放日温馨提示
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="Dynamicdetails.aspx?id=8557" title="重阳系列产品2017年3月开放日温馨提示">
-                            重阳系列产品2017年3月开放日温馨提示
-                        </a>
-                    </li>
-                </ul>
                 <ul style="border:none">
                     <li>
-                        <a target="_blank" href="Dynamicdetails.aspx?id=8550" title="重阳系列产品2017年2月开放日温馨提示">
-                            重阳系列产品2017年2月开放日温馨提示
+                        <a target="_blank" href="newsdetail.html?k=1&&id=1" title="金正恩的“狼来了”，投资者不再买账">
+                            金正恩的“狼来了”，投资者不再买账
                         </a>
                     </li>
-
                     <li>
-                        <a target="_blank" href="Dynamicdetails.aspx?id=8542" title="重阳系列产品2017年1月开放日温馨提示">
-                            重阳系列产品2017年1月开放日温馨提示
+                        <a target="_blank" href="newsdetail.html?k=1&&id=2" title="美联储缩表对美国经济负面影响有限">
+                            美联储缩表对美国经济负面影响有限
                         </a>
                     </li>
                 </ul>
@@ -254,7 +204,7 @@
                     </a></li>
                 </ul>
             </div>
-            <div id="con_one_3" class="hover">
+            <div id="con_one_3" style="display:none;">
                 <dl>
                     <dt>
                         重阳投资副董事长汤进喜：私募基金应当做负责任的...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017-6-26
@@ -394,15 +344,15 @@
     /*第一种形式 第二种形式 更换显示样式*/
     function setTab(name, cursel, n) {
         if (cursel === 1) {
-            $("#tabMove").attr("href", "ChongYangDynamic.aspx");
+            $("#tabMove").attr("href", "news.html");
         } else if (cursel === 2) {
-            $("#tabMove").attr("href", "CYRecommend.aspx");
+            $("#tabMove").attr("href", "news.html");
         } else if (cursel === 4) {
-            $("#tabMove").attr("href", "CYRecommend.aspx?k=4");
+            $("#tabMove").attr("href", "news.html");
         } else {
-            $("#tabMove").attr("href", "CYRecommend.aspx?k=2");
+            $("#tabMove").attr("href", "news.html");
         }
-        for (i = 1; i <= n; i++) {
+        for (var i = 1; i <= n; i++) {
             var menu = document.getElementById(name + i);
             var con = document.getElementById("con_" + name + "_" + i);
             menu.className = i === cursel ? "hover" : "";
