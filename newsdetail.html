@@ -102,10 +102,10 @@
 
 <div class="wapper clearfix overhide">
     <div class="subleft">
-        <a href="javascript:void(0);" class="" onclick="ClickLeftMenu('1');" id="menu01">中喆视点</a>
-        <a href="javascript:void(0);" class="" onclick="ClickLeftMenu('2');" id="menu02">中喆动态</a>
-        <a href="javascript:void(0);" class="" onclick="ClickLeftMenu('3');" id="menu03">行业政策</a>
-        <a href="javascript:void(0);" class="" onclick="ClickLeftMenu('4');" id="menu04">中喆问答</a>
+        <a href="news.html?k=1" id="menu01">中喆视点</a>
+        <a href="news.html?k=2" id="menu02">中喆动态</a>
+        <a href="news.html?k=3" id="menu03">行业政策</a>
+        <a href="news.html?k=4" id="menu04">中喆问答</a>
     </div>
     <div class="rightcontent wordbox">
         <table id="ctl00_cpContent_DataList1" width="625" cellspacing="0" border="0" style="border-collapse:collapse;">
@@ -469,8 +469,6 @@
             ClickLeftMenu('3');
         } else if (k === 4) {
             ClickLeftMenu('4');
-        } else {
-            ClickLeftMenu('1');
         }
         var id = +$G("id");
         $.get('./data/data.json', function (res) {
