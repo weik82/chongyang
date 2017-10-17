@@ -2,70 +2,98 @@
 <html lang="en">
 <head id="ctl00_Head1">
     <meta charset="UTF-8">
-    <title>重阳投资</title>
+    <title>中喆投资</title>
     <link href="css/common.css" rel="stylesheet" type="text/css"/>
     <link href="css/css.css" rel="stylesheet" type="text/css"/>
+    <style>
+        .zh-abt{
+            display: inline-block;
+            width: 200px;
+            font-weight: normal;
+        }
+    </style>
 </head>
 <body>
 <div class="wapper header">
-    <a href="Default.aspx" class="fl">
+    <a href="index.html" class="fl">
         <img src="images/default/logo.jpg">
     </a>
     <table height="10px" border="0" cellspacing="0" cellpadding="0" style="margin-left: 10px;margin-right: 0;">
         <tr>
             <td width="1130" height="5"></td>
-            <td width="50" style="padding-top: 0; text-align: right;" valign="top">
-                <a href="Default.aspx">
-                    <font style="font-family: Arial; font-size: 12px; text-align: right;" color="#001c43">
-                        <b>中文</b>
-                    </font>
-                </a>
+            <td width="100" style="padding-top: 0; text-align: right;" valign="top">
+                <font style="font-family: Arial; font-size: 12px; text-align: right;" color="#001c43">
+                    <b>服务热线:</b>
+                </font>
             </td>
             <td width="20px" valign="top" style="padding-top: 0px; color: #001c43; text-align: center;"></td>
-            <td width="50" style="padding-top: 0px; text-align: left;" valign="top">
-                <a href="http://www.chongyang.net/English">
-                    <font style="font-family: Arial; font-size: 12px;text-align: left;" color="#001c43">
-                        <b>English</b>
-                    </font>
-                </a>
+            <td width="120" style="padding-top: 0px; text-align: left;" valign="top">
+                <font style="font-family: Arial; font-size: 12px;text-align: left;" color="#001c43">
+                    <b>0571-81234567</b>
+                </font>
             </td>
         </tr>
     </table>
     <ul class="menu">
-        <li><a href="Default.aspx">首页</a></li>
+        <li><a href="index.html">首页</a></li>
         <li>
-            <a href="about.aspx">走近重阳</a>
+            <a href="about.html?k=1">关于中喆</a>
             <p class="submenu">
-                <a href="about.aspx">关于重阳</a>
-                <a href="about.aspx?k=2">投资理念</a>
-                <a href="about.aspx?k=5">合规风控</a>
-                <a href="about.aspx?k=4">投研核心</a>
-                <a href="about.aspx?k=3">基金经理</a>
-                <a href="about.aspx?k=6">联系我们</a>
+                <a href="about.html?k=1">中喆简介</a>
+                <a href="about.html?k=2">组织架构</a>
+                <a href="about.html?k=3">核心团队</a>
+                <a href="about.html?k=4">招聘信息</a>
+                <a href="about.html?k=5">联系我们</a>
                 <i class="sj"></i><i class="rightborder"></i>
             </p>
         </li>
-        <li id="m_profile"><a href="ChongYangDynamic.aspx">重阳动态</a></li>
-        <li id="m_info">
-            <a href="CYRecommend.aspx">思享重阳</a>
+        <li id="m_profile">
+            <a href="news.html?k=1">公司动态</a>
             <p class="submenu">
-                <a href="CYRecommend.aspx">重阳问答</a>
-                <a href="CYRecommend.aspx?k=2">重阳视点</a>
-                <a href="CYRecommend.aspx?k=3">重阳荐文</a>
+                <a href="news.html?k=1">中喆视点</a>
+                <a href="news.html?k=2">中喆动态</a>
+                <a href="news.html?k=3">行业政策</a>
+                <a href="news.html?k=4">中喆问答</a>
                 <i class="sj"></i>
                 <i class="rightborder"></i>
             </p>
         </li>
         <li id="m_pro">
-            <a href="products.aspx">产品与服务</a>
+            <a href="product.html?k=1">产品与服务</a>
             <p class="submenu">
-                <a href="products.aspx?k=3">认购流程</a>
-                <a href="products.aspx?k=2">产品咨询</a>
+                <a href="product.html?k=1">认购流程</a>
+                <a href="product.html?k=2">产品列表</a>
                 <i class="sj"></i>
                 <i class="rightborder"></i>
             </p>
         </li>
-        <li class="last"><a href="http://club.chongyang.net">客户登录</a></li>
+        <li id="m_info" class="last">
+            <a href="risk.html?k=1">投资体系</a>
+            <p class="submenu">
+                <a href="risk.html?k=1">投资理念</a>
+                <a href="risk.html?k=2">风险控制</a>
+                <i class="sj"></i>
+                <i class="rightborder"></i>
+            </p>
+        </li>
+        <!-- <li id="m_user">
+             <a href="http://club.chongyang.net">注册用户</a>
+             <p class="submenu">
+                 <a href="CYRecommend.aspx">个人注册</a>
+                 <a href="CYRecommend.aspx?k=2">机构注册</a>
+                 <i class="sj"></i>
+                 <i class="rightborder"></i>
+             </p>
+         </li>
+         <li id="m_user1" class="last">
+             <a href="http://club.chongyang.net">用户登陆</a>
+             <p class="submenu">
+                 <a href="CYRecommend.aspx">个人登陆</a>
+                 <a href="CYRecommend.aspx?k=2">机构登陆</a>
+                 <i class="sj"></i>
+                 <i class="rightborder"></i>
+             </p>
+         </li>-->
     </ul>
 </div>
 
@@ -83,89 +111,56 @@
     </div>
     <div id="page01" class="rightcontent wordbox" style="display: none;">
         <strong style="font-weight: bolder; color: #0B3953; font-size: 15px;">公司简介</strong>
-        <p>2001年12月，上海重阳投资有限公司成立。2009年6月，专注于资产管理业务的上海重阳投资管理有限公司（重阳投资）成立。2014年7月，重阳投资改制为股份公司，注册资本为人民币两亿元。2015年11月，上海重阳投资有限公司改制为集团公司。</p>
-        <p>基于资产管理行业的特殊属性，重阳投资自成立起即采用合伙模式经营，合伙人会议是公司日常事务的最高决策机构。</p>
-        <p>经过多年积累，重阳投资已拥有一支既富理论造诣又经市场锤炼的投研团队，投研员工超过30人。</p>
-        <p>“客户利益第一”是重阳投资的核心经营理念。重阳投资旗下基金业绩优良，存续期最长的“重阳1期”在2009-2015年的复合收益率为22%。同期，重阳投资连续八年被评为“金牛私募基金管理公司”。</p>
-        <p>我国资产管理行业方兴未艾，重阳投资与时代同行。</p>
-        <br/>
-        <strong style="font-weight: bolder; color: #0B3953; font-size: 15px;">司名释义</strong>
-        <p>重阳两义：重为复，阳为升，重阳寓意复合增长；重阳节有登高习俗，极目眺远，映射投资需远见。</p>
-        <br/>
-        <strong style="font-weight: bolder; color: #0B3953; font-size: 15px;">标识释义</strong>
-        <p>水是生命之源，并蓄柔和与坚韧。投石于水，水纹层扩。标识创意源于水纹东南部，方形代表专业冷静，深蓝代表踏实稳重。</p>
-        <br/>
-        <strong style="font-weight: bolder; color: #0B3953; font-size: 15px;">企业文化</strong>
-        <p>协作、分享、坦诚、谦逊、心胸开阔</p>
+        <p>中喆投资管理有限公司成立于2016年，是一家专注于证券投资的专业化投资管理机构。公司于2017年7月取得私募基金管理人资格，登记编号P1063749。</p>
+        <p>公司汇聚着一批来自金融行业的精英人才，坚持以客户为中心、以风险控制为前提、以创造价值为目标，为投资者、目标企业和公司实现良好的投资回报和资本增值。</p>
         <br/>
     </div>
     <div id="page02" class="rightcontent wordbox" style="display: none;">
-        <p>重阳投资认为合规风控体系和投研体系密不可分，合规风控贯穿于投研的事前、事中和事后，而重心在事前。</p>
-        <br/>
-        <img src="images/pic12.png" vspace="20"/>
+        <img src="images/zhongzhe/zzjg.png" width="650" vspace="20"/>
     </div>
     <div id="page03" class="rightcontent wordbox" style="display: none;">
         <table style="width: 100%; text-align: left; vertical-align: top;" cellpadding="0" cellspacing="0">
+            <tr><td><img src="./images/zhongzhe/p1.png" width="200" alt=""></td></tr>
             <tr>
-                <td style="width: 100%; font-size: 14px; vertical-align: top; font-weight: bold;font-family: 微软雅黑; color: rgb(0,51,102);">裘国根<br/>执行事务合伙人、董事长兼首席投资官</td>
-            </tr>
-            <tr>
-                <td style="vertical-align: top;">中国人民大学经济学硕士，24年证券投资经验。1993年至1995年就职于原君安证券下属机构，1996年开始职业投资，2001年创立上海重阳投资有限公司，2008年起管理阳光私募基金，2009年参与创立上海重阳投资管理有限公司。熟悉资本市场各种金融工具，长于权益估值和对冲策略。</td>
-            </tr>
-            <tr>
-                <td>&nbsp</td>
-            </tr>
-            <tr>
-                <td style="width: 100%; font-size: 14px; vertical-align: top; font-weight: bold;font-family: 微软雅黑; color: rgb(0,51,102);">陈心<br/>合伙人、首席策略师兼基金经理
+                <td style="width: 100%; font-size: 14px; vertical-align: top; font-weight: bold;font-family: 微软雅黑; color: rgb(0,51,102);">
+                    <span class="zh-abt">北京明沣投资管理股份有限公司</span>
+                    <span class="zh-abt">管理规模：3000万</span> <span>基金经理</span><br>
+                    <span class="zh-abt">和润兴业投资管理有限公司</span>
+                    <span class="zh-abt">管理规模：1亿</span>    <span>基金经理</span><br>
+                    <span class="zh-abt">和润兴业投资管理有限公司</span>
+                    <span class="zh-abt">管理规模：1亿</span>	<span>交易部经理</span><br>
+                    <span class="zh-abt">鑫正鹏投资管理有限公司</span>
+                    <span class="zh-abt">管理规模：1.5亿</span>	<span>研究部经理</span><br>
+                    <span class="zh-abt">股商时代科技公司</span>
+                    <span class="zh-abt">管理规模：5000万</span>	<span>分析师操盘手</span><br>
                 </td>
             </tr>
             <tr>
-                <td style="vertical-align: top;">芝加哥大学工商管理硕士，CFA，21年金融从业经验。曾先后在中国国际金融有限公司、摩根士丹利、里昂证券等金融机构担任固定收益、汽车和银行业高级分析师。2009年加入重阳投资，2010年起任基金经理，2014年起任战略研究部主管，2015年起兼任首席策略师。</td>
+                <td style="vertical-align: top;">
+                    2008年进入投资机构专职从事股票二级市场投资。经过多次牛熊循环，擅长市场趋势转折区域的跟踪判断，正确率超过80%。<br>
+                    任公司基金经理期间，2014年至2015年盈利212%，2016年公司发行首只私募证券投资基金，任基金经理至2016年12月，半年盈利超过20%，期间最大市值亏损4%，风险控制良好。此业绩可进入2016年私募证券投资基金排名前5%
+                </td>
             </tr>
+            <tr><td>&nbsp</td></tr>
+            <tr><td><img src="./images/zhongzhe/p2.png" width="200" alt=""></td></tr>
             <tr>
-                <td>&nbsp</td>
-            </tr>
-            <tr>
-                <td style="width: 100%; font-size: 14px; vertical-align: top; font-weight: bold;font-family: 微软雅黑; color: rgb(0,51,102);">陈缨<br/>合伙人、副董事长</td>
-            </tr>
-            <tr>
-                <td style="vertical-align: top;">复旦大学、荷兰马斯特里赫特工商管理双硕士，24年公司运营及财务管理经验。1993年加入宝钢，历任宝钢股份财务总监、董事会秘书、宝钢集团副总经理等职务。2016年加入重阳投资。</td>
-            </tr>
-            <tr>
-                <td>&nbsp</td>
-            </tr>
-            <tr>
-                <td style="width: 100%; font-size: 14px; vertical-align: top; font-weight: bold;font-family: 微软雅黑; color: rgb(0,51,102);">贺建青<br/>合伙人、首席分析师兼行业研究部主管</td>
-            </tr>
-            <tr>
-                <td style="vertical-align: top;">中国人民大学经济学硕士，11年证券分析经验。2006年加入重阳投资，对保险、家电、零售、食品饮料等行业有着丰富的研究经验，2014年起任行业研究部主管，2015年起兼任首席分析师。</td>
-            </tr>
-            <tr>
-                <td>&nbsp</td>
-            </tr>
-            <tr>
-                <td style="width: 100%; font-size: 14px; vertical-align: top; font-weight: bold;font-family: 微软雅黑; color: rgb(0,51,102);">王庆<br/>合伙人、总裁兼首席经济学家</td>
-            </tr>
-            <tr>
-                <td style="vertical-align: top;">美国马里兰大学经济学博士，19年金融从业经验。曾先后担任国际货币基金组织经济学家、摩根士丹利大中华区首席经济学家、中国国际金融有限公司投资银行部执行负责人。2010-2011年，王庆博士带领的摩根士丹利经济研究团队连续两年被《机构投资者》杂志评选为亚洲区第一名。2013年加入重阳投资。</td>
-            </tr>
-            <tr>
-                <td>&nbsp</td>
-            </tr>
-            <tr>
-                <td style="width: 100%; font-size: 14px; vertical-align: top; font-weight: bold;font-family: 微软雅黑; color: rgb(0,51,102);">谢卓<br/>合伙人、交易部主管
+                <td style="width: 100%; font-size: 14px; vertical-align: top; font-weight: bold;font-family: 微软雅黑; color: rgb(0,51,102);">
+                    <span class="zh-abt">北京明沣投资管理股份有限公司</span>
+                    <span class="zh-abt">管理规模：500万</span> <span>基金经理</span><br>
+                    <span class="zh-abt">天弘基金（公募基金）</span>
+                    <span class="zh-abt">管理规模：15184.84亿元</span>    <span>基金运营会计</span><br>
                 </td>
             </tr>
             <tr>
-                <td style="vertical-align: top;">复旦大学经济学硕士，19年证券交易经验。1996年起就职于海南港澳信托投资公司，2001年加入重阳投资，负责交易业务。熟悉中国资本市场各种金融工具，交易技巧娴熟。</td>
+                <td style="vertical-align: top;">
+                    于2016年年末向公司提出提出重仓投资格力电器，通过分析格力电器财务数据，公司现金流十分充裕，格力被举牌是大概率事件，股票流通性极好，风险很低，基金在2016年底因格力电器获利丰富
+                </td>
             </tr>
-            <tr>
-                <td>&nbsp</td>
-            </tr>
+            <tr><td>&nbsp</td></tr>
         </table>
     </div>
     <div id="page04" class="rightcontent wordbox" style="display: none;">
-        <table style="width: 100%; text-align: left; vertical-align: top;" cellpadding="0" cellspacing="0">
+        <!--<table style="width: 100%; text-align: left; vertical-align: top;" cellpadding="0" cellspacing="0">
             <tr>
                 <td style="width: 100%; font-size: 14px; vertical-align: top; font-weight: bold;font-family: 微软雅黑; color: rgb(0,51,102);">裘国根</td>
             </tr>
@@ -202,20 +197,15 @@
             <tr>
                 <td>&nbsp</td>
             </tr>
-        </table>
+        </table>-->
     </div>
     <div id="page05" class="rightcontent wordbox" style="display: none;">
         <div style="width: 625px;">
-            <p><strong>上海重阳投资管理股份有限公司</strong><br/>
-                地址：上海市浦东新区世纪大道8号国金中心北塔51楼<br/>
-                邮编：200120 <br/>
-                电话：86 21 20216666 <br/>
-                客服：4006812989 <br/>
-                传真：86 21 20216688 <br/>
-                电邮：<a class="email" target="_blank" href="mailto:chongyang@chongyang.net">chongyang@chongyang.net</a>
+            <p><strong>中喆投资管理（杭州）有限公司</strong><br/>
+                联系地址：北京市丰台区外环西路26号院68号楼<br/>
             </p>
         </div>
-        <img src="images/index_map.jpg"/>
+        <img src="images/zhongzhe/map.png" width="500"/>
         <br/>
     </div>
 </div>
