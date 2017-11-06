@@ -90,7 +90,7 @@
     </ul>
 </div>
 <div class="wapper clearfix" style="height:260px;">
-    <div class="columnl" style="height:250px;">
+    <div class="columnl" style="height:250px;display: none">
         <!--<span><a href="http://club.chongyang.net" target="_blank">点击进入</a></span>-->
         <ul>
             <li><a href="product.html?k=1" class="on">认购流程</a></li>
@@ -102,8 +102,8 @@
     <!--banner  begin-->
     <div class="banner_box" style="height:250px;">
         <ul class="banner">
-            <li><a href="#"><img src="images/zhongzhe/banner_1.jpg" width="690" height="250"></a></li>
-            <li><a href="#"><img src="images/zhongzhe/banner_2.jpg" width="690" height="250"></a></li>
+            <li><a href="#"><img src="images/zhongzhe/banner_1.jpg" width="940" height="250"></a></li>
+            <li><a href="#"><img src="images/zhongzhe/banner_2.jpg" width="940" height="250"></a></li>
           <!--  <li><a href="#"><img src="images/default/banner_3.jpg" width="690" height="250"></a></li>
             <li><a href="#"><img src="images/default/banner_4.jpg" width="690" height="250"></a></li>
             <li><a href="#"><img src="images/default/banner_5.jpg" width="690" height="250"></a></li>-->
@@ -220,33 +220,33 @@
         </div>
     </div>
     <div class="sidebar">
-        <h1>行业政策<a href="CYRecommend.aspx?k=3"><img src="images/default/more.png" width="64" height="19"/></a></h1>
-        <!--<ul>
-            <li><a target="_blank" href="Recommenddetails.aspx?id=8529&k=3" title="桥水达里奥：我们正处在一个长达10年的重大转变中">
-                桥水达里奥：我们正处在一个长达10年的重大...
+        <h1>行业政策<a href="news.html?k=3"><img src="images/default/more.png" width="64" height="19"/></a></h1>
+        <ul>
+            <li><a target="_blank" href="newsdetail.html?id=15&k=3" title="关于发布《证券投资基金投资流通受限股票估值指引（试行）》的通知">
+                关于发布《证券投资基金投资流通受限股票估值指...
             </a></li>
-            <li><a target="_blank" href="Recommenddetails.aspx?id=8528&k=3" title="成功的投资人都是怎么看世界的">
-                成功的投资人都是怎么看世界的
+            <li><a target="_blank" href="newsdetail.html?id=16&k=3" title="关于失联私募机构最新情况及拟公示第十二批失联私募机构的公告">
+                关于失联私募机构最新情况及拟公示第十二批失联...
             </a></li>
-            <li><a target="_blank" href="Recommenddetails.aspx?id=8484&k=3" title="投资，就像是一场奥运">
-                投资，就像是一场奥运
+            <li><a target="_blank" href="newsdetail.html?id=17&k=3" title="关于发布《私募投资基金募集行为管理办法》的通知">
+                关于发布《私募投资基金募集行为管理办法》的通...
             </a></li>
-            <li><a target="_blank" href="Recommenddetails.aspx?id=8481&k=3" title="投资是一场“认识你自己”——从德尔斐到佛罗伦萨">
-                投资是一场“认识你自己”——从德尔斐到佛罗...
+            <li><a target="_blank" href="newsdetail.html?id=18&k=3" title="关于发布《私募投资基金信息披露内容与格式指引2号-适用于私募股权(含创业)投资基金》">
+                关于发布《私募投资基金信息披露内容与格式指引2...
             </a></li>
-            <li><a target="_blank" href="Recommenddetails.aspx?id=8460&k=3" title="杨绛先生百岁感言原版：我的向上之气来自信仰">
-                杨绛先生百岁感言原版：我的向上之气来自信仰
+            <li><a target="_blank" href="newsdetail.html?id=19&k=3" title="关于适时延长私募基金第二季度信息报送时限的通知">
+                关于适时延长私募基金第二季度信息报送时限的通...
             </a></li>
-            <li><a target="_blank" href="Recommenddetails.aspx?id=8442&k=3" title="稻盛和夫：把愿望渗透到潜意识">
-                稻盛和夫：把愿望渗透到潜意识
+            <li><a target="_blank" href="newsdetail.html?id=20&k=3" title="关于注销第二批公示期满三个月且仍未主动联系协会的失联机构私募基金管理人登记的公告">
+                关于注销第二批公示期满三个月且仍未主动联系协...
             </a></li>
-            <li><a target="_blank" href="Recommenddetails.aspx?id=8434&k=3" title="股神巴菲特为何“逆流”看多中国经济">
-                股神巴菲特为何“逆流”看多中国经济
+            <li><a target="_blank" href="newsdetail.html?id=21&k=3" title="关于注销公示期满三个月且仍未主动联系协会的失联机构私募基金管理人登记的公告">
+                关于注销公示期满三个月且仍未主动联系协会的...
             </a></li>
-            <li style="border:none"><a target="_blank" href="Recommenddetails.aspx?id=8425&k=3" title="决定你生活品质的10个经济学思维">
-                决定你生活品质的10个经济学思维
+            <li style="border:none"><a target="_blank" href="newsdetail.html?id=22&k=3" title="关于发布《基金中基金估值业务指引（试行）》的通知">
+                关于发布《基金中基金估值业务指引（试行）》的...
             </a></li>
-        </ul>-->
+        </ul>
     </div>
 </div>
 
@@ -324,7 +324,7 @@
     //-->
     function scroll() {
         var z = $(".banner li").size(),
-            w = (z + 1) * 690,
+            w = (z + 1) * 940,
             i = 0;
         $(".banner li").first().clone().appendTo(".banner");
         $(".banner").width(w);
@@ -340,13 +340,13 @@
             if (i >= 0) {
                 i = -z;
             }
-            $(".banner").css({"left": i * 690});
+            $(".banner").css({"left": i * 940});
             i++;
             scroll(i);
         });
 
         function scroll(m) {
-            $(".banner").animate({"left": m * 690}, 1000);
+            $(".banner").animate({"left": m * 940}, 1000);
             if (i + z <= 0) {
                 i = 1;
             }

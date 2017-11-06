@@ -43,13 +43,13 @@ ul .submenu{ position:absolute; display:none; width:440px; height:35px; padding:
 .club a:hover{color:orange;}
 
 /*.banner_box{float:left; width:705px; height:243px; position:relative; overflow:hidden;}*/
-.banner_box{float:left; width:690px; height:300px; position:relative; overflow:hidden;  margin-top:2px;}
+.banner_box{float:left; width:940px; height:300px; position:relative; overflow:hidden;  margin-top:2px;}
 .banner{position:absolute; left:0; width:3500px; top:0;}
 .banner li{float:left;}
 /*.a_left,.a_right{width:60px; height:60px; position:absolute; top:120px;  z-index:5;}*/
 .a_left,.a_right{width:60px; height:60px; position:absolute; top:100px;  z-index:5;}
-.a_left{ background:url(../images/default/a_left.png) no-repeat; left:20px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/default/a_right.png" ,sizingMethod="noscale");}
-.a_right{background:url(../images/default/a_right.png) no-repeat; left:620px;_background:none;}
+.a_left{ background:url(../images/default/a_left.png) no-repeat; left:20px;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/default/a_right.png" ,sizingMethod="noscale");}
+.a_right{background:url(../images/default/a_right.png) no-repeat; right:20px;_background:none;}
 
 .news_box{width:440px;}
 .mr50{margin-right:50px;}
@@ -146,13 +146,13 @@ ul .submenu{ position:absolute; display:none; width:440px; height:35px; padding:
 .tb_fund td{background-color:#f0f0ee;}
 .tb_fund {margin-bottom:20px;}
 
-.columnl{ width:227px; height:300px; background-image:url(../Images/default/jlb.jpg); display:block; position:relative; float:left; margin-top:2px;margin-right:4px}
+.columnl{ width:227px; height:300px; background-image:url(../images/default/jlb.jpg); display:block; position:relative; float:left; margin-top:2px;margin-right:4px}
 .columnl span a{ position:absolute;right:25px; top:83px; color:#c7eafb;  text-decoration:underline;}
 .columnl ul{ float:left; width:205px; position:absolute;bottom:20px;left:24px; font-size:12px;}
-.columnl li{ float:left; width:84px; height:22px; background-image:url(../Images/default/columnl.png); color:#fff; text-indent:14px; line-height:22px; margin-bottom:10px; margin-right:10px;}
+.columnl li{ float:left; width:84px; height:22px; background-image:url(../images/default/columnl.png); color:#fff; text-indent:14px; line-height:22px; margin-bottom:10px; margin-right:10px;}
 .columnl li a{ color:#fff;}
-.columnl li a:hover{ float:left; width:84px; height:22px; background-image:url(../Images/default/columnlh.png); color:#fff;}
-.columnl li a.on{ float:left; width:84px; height:22px; background-image:url(../Images/default/columnlh.png); color:#fff;}
+.columnl li a:hover{ float:left; width:84px; height:22px; background-image:url(../images/default/columnlh.png); color:#fff;}
+.columnl li a.on{ float:left; width:84px; height:22px; background-image:url(../images/default/columnlh.png); color:#fff;}
 
 
 /*广告*/
@@ -163,21 +163,21 @@ ul .submenu{ position:absolute; display:none; width:440px; height:35px; padding:
     width:930px;
     margin:0 auto;
 }
-#Tab1{width:620px;float:left;background-image: url(../Images/default/tabboxbg.png);background-repeat: no-repeat;background-position: left 39px;}
+#Tab1{width:620px;float:left;background-image: url(../images/default/tabboxbg.png);background-repeat: no-repeat;background-position: left 39px;}
 /*菜单class*/
 #Tab1 .Menubox { float:left; width:620px; position:relative}
 #Tab1 .Menubox a{ position:absolute;right:0px;bottom:8px;}
 #Tab1 .Menubox ul{margin-left:0px;border-bottom:none; padding-bottom:0px;}
-#Tab1 .Menubox li{float:left; display:block; cursor:pointer; width:101px; height:39px; text-align:center; color:#828282;font-weight:bold; font-size:14px; background-image:url(../Images/default/tab02.png); line-height:39px; border-left:1px solid #ccc;
+#Tab1 .Menubox li{float:left; display:block; cursor:pointer; width:101px; height:39px; text-align:center; color:#828282;font-weight:bold; font-size:14px; background-image:url(../images/default/tab02.png); line-height:39px; border-left:1px solid #ccc;
     border-top:1px solid #ccc;
     border-right:1px solid #ccc;}
-#Tab1 .Menubox li.hover{ width:101px; height:39px; float:left; color:#9e0621; background-image:url(../Images/default/tab01.png);}
+#Tab1 .Menubox li.hover{ width:101px; height:39px; float:left; color:#9e0621; background-image:url(../images/default/tab01.png);}
 #Tab1 .Contentbox{clear:both; margin-top:-1px; height:297px; font-size:12px; padding:10px; padding-top:20px;}
 #Tab1 .Contentbox dl{ float:left; width:560px; margin-left:20px; padding-bottom:10px; border-bottom:solid 1px #5f5f5f;}
 #Tab1 .Contentbox dt{ color:#001c43; font-size:14px; font-weight:bold; margin-bottom:10px;}
 #Tab1 .Contentbox dd{color:#5f5f5f; line-height:21px;}
 #Tab1 .Contentbox ul{ float:left; width:560px; border-bottom:dashed 1px #5f5f5f; padding-bottom:5px; margin-left:20px; margin-top:15px;}
-#Tab1 .Contentbox ul li{background-image:url(../Images/default/ontentboxdot.jpg);background-repeat: no-repeat;background-position: left top; text-indent:12px; line-height:18px; float:left; width:279px;}
+#Tab1 .Contentbox ul li{background-image:url(../images/default/ontentboxdot.jpg);background-repeat: no-repeat;background-position: left top; text-indent:12px; line-height:18px; float:left; width:279px;}
 #Tab1 .Contentbox ul li a{ color:#5f5f5f;}
 
 .sidebar{ float:left; width:290px; margin-left:20px;}
